@@ -49,4 +49,9 @@ class PasswordTest{
     fun `missing small letter`(){
         assertEquals(false,passwordChecker.checkPassword("@UGVR7849"))
     }
+
+    @Test
+    fun `missing number`(){
+        assertEquals(false,passwordChecker.checkPassword("ervve@UGVR"))
+    }
 }
